@@ -1,4 +1,4 @@
-# Studienleistung I: Bouncer | 1. Bouncer malt eine Spirale
+# Studienleistung I: Bouncer | 2. Bouncer baut eine Brücke
 
 ## Allgemeine Hinweise zur Studienleistung
 In dieser Studienleistung werden Sie drei Programmieraufgaben lösen.
@@ -7,9 +7,9 @@ Um die Aufgaben zu bearbeiten, müssen Sie zuerst das jeweilige Projekt in Intel
 Diese Projekte sind:
 * ```Studienleistung-I-Bouncer-1-BouncerMaltEineSpirale```
 * ```Studienleistung-I-Bouncer-2-BouncerBautEineBrücke```
-* ```Studienleistung-I-Bouncer-3-BouncerLeertEineHöhle``
+* ```Studienleistung-I-Bouncer-3-BouncerGraebtNachKristallen```
 
-Für die Teilaufgabe, die in diesem Dokument beschrieben ist, öffnen Sie bitte das Projekt: ```Studienleistung-I-Bouncer-1-BouncerMaltEineSpirale```
+Für die Teilaufgabe, die in diesem Dokument beschrieben ist, öffnen Sie bitte das Projekt: ```Studienleistung-I-Bouncer-2-BouncerBautEineBrücke```
 
 Nutzen Sie zum Lösen der einzelnen Aufgaben die bereitgestellten Klassendateien.
 Zum Einreichen Ihrer Aufgaben nutzen Sie die entsprechende Funktion in GRIPS.
@@ -33,20 +33,22 @@ Wir stehen Ihnen dann zeitnah zur Seite über eine Direktnachricht.
 
 
 ## Ausgangslage
-Bouncer steht in einem leeren, quadratischen Raum (15x15 Felder).
-Bouncers Aufgabe ist es, beginnend von der Mitte des Raumes aus, eine grüne Spirale in den Raum zu zeichnen.
+Bouncer steht auf der linken Seite der Karte an einem Ufer.
+Bouncer erspäht auf der rechten Seite der Karte ein anderes Ufer.
+Bouncer will eine Brücke bauen um das Ufer an dem Bouncer steht mit dem anderen Ufer zu verbinden.
 
-| Bouncer steht in einer Welt am unteren Rand. | Bouncer hat, von der Mitte beginnend, eine Spirale in die Welt gemalt. |
+| Bouncer steht am linken Ufer. | Bouncer Bouncer hat eine Brücke gebaut und steht am rechten Ufer am Rand der Welt. |
 |:------:|:------:|
-| ![ouncer steht in einer Welt am unteren Rand.](./docs/spiral1.png) | ![Bouncer hat die Spirale gemalt](./docs/spiral2.png) |
+| ![Bouncer steht am linken Ufer.](./docs/bridge1.png) | ![Bouncer Bouncer hat eine Brücke gebaut und steht am rechten Ufer am Rand der Welt.](./docs/bridge2.png) |
 
 ## Aufgabe
 
-Lösen Sie folgende Teilaufgaben, damit Bouncer die Spirale in die Welt malt:
-1. Bouncer bewegt sich in die Mitte der Welt
-2. Bouncer malt die Spirale gegen den Uhrzeigersinn
-3. Zwischen den Linien der Spiralen soll immer Platz der Größe von einem Feld freibleiben (weiß).
-4. Sobald Bouncer aus Platzgründen die Spirale nicht mehr weitermalen kann, bleibt Bouncer stehen und schaut nach Norden.
+Lösen Sie folgende Teilaufgaben, damit Bouncer eine Brücke baut
+
+1. Bouncer muss das Ende des Festlandes finden
+2. Bouncer muss die Brücke bauen, beginnend am Festland
+3. Ab dem Festland muss Bouncer alle *zwei* Felder einen Brückenpfeiler bauen, damit die Brücke nicht einbricht
+4. Bouncer geht am rechten Ufer bis zur Kante der Karte
+
 
 * **Hinweise**
-* Benutzen Sie die Konstanten `WORLD_WIDTH` und `WORLD_HEIGHT` um die Mitte der Welt zu berechnen

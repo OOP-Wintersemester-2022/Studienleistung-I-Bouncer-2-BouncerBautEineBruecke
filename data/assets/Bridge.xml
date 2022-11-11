@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <map>
-<bouncer x="1" y="6"  value="" />
+<bouncer x="0" y="6"  value="" />
 <obstacle x="0" y="7"  value="" />
 <obstacle x="1" y="7"  value="" />
 <obstacle x="13" y="7"  value="" />
